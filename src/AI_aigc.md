@@ -2,7 +2,6 @@
 
 |Stars|Repository|Language|Description|Updated|Created|
 |:-|:-|:-|:-|:-|:-|
-
 | 6737 | [ YaoApp/yao ] ( git://github.com/YaoApp/yao.git ) | Go | :rocket: A performance app engine to create web services and applications in minutes.Suitable for AI, IoT, Industrial Internet, Connected Vehicles, DevOps, Energy, Finance and many other use-cases. | 2024-02-07T12:17:58Z | 2021-09-06T09:20:27Z
 | 6344 | [ open-mmlab/mmagic ] ( git://github.com/open-mmlab/mmagic.git ) | Jupyter Notebook | OpenMMLab Multimodal Advanced, Generative, and Intelligent Creation Toolbox. Unlock the magic 🪄: Generative-AI (AIGC), easy-to-use APIs, awsome model zoo, diffusion models, for text-to-image generation, image/video restoration/enhancement, etc. | 2024-02-07T21:11:54Z | 2019-08-23T13:04:29Z
 | 6341 | [ liaokongVFX/LangChain-Chinese-Getting-Started-Guide ] ( git://github.com/liaokongVFX/LangChain-Chinese-Getting-Started-Guide.git ) | None | LangChain 的中文入门教程 | 2024-02-07T13:50:53Z | 2023-04-07T13:15:12Z
