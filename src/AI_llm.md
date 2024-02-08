@@ -40,3 +40,10 @@
 
 |#|Repository|Description|Stars|Language|Updated|
 |:-|:-|:-|:-|:-|:-|
+|60911|[nomic-ai/gpt4all](git://github.com/nomic-ai/gpt4all.git)|C++|gpt4all: open-source LLM chatbots that you can run anywhere|2024-02-08T06:31:04Z|2023-03-27T18:49:32Z|
+|51478|[binary-husky/gpt_academic](git://github.com/binary-husky/gpt_academic.git)|Python|为GPT/GLM等LLM大语言模型提供实用化交互接口，特别优化论文阅读/润色/写作体验，模块化设计，支持自定义快捷按钮&函数插件，支持Python和C++等项目剖析&自译解功能，PDF/LaTex论文翻译&总结功能，支持并行问询多种LLM模型，支持chatglm3等本地模型。接入通义千问, deepseekcoder, 讯飞星火, 文心一言, llama2, rwkv, claude2, moss等。|2024-02-08T05:42:26Z|2023-03-20T09:05:13Z|
+|35828|[ollama/ollama](git://github.com/ollama/ollama.git)|Go|Get up and running with Llama 2, Mistral, and other large language models locally.|2024-02-08T06:27:15Z|2023-06-26T19:39:32Z|
+|34152|[geekan/MetaGPT](git://github.com/geekan/MetaGPT.git)|Python|🌟 The Multi-Agent Framework: Given one line Requirement, return PRD, Design, Tasks, Repo|2024-02-08T05:58:57Z|2023-06-30T09:04:55Z|
+|27809|[run-llama/llama_index](git://github.com/run-llama/llama_index.git)|Python|LlamaIndex (formerly GPT Index) is a data framework for your LLM applications|2024-02-08T06:13:22Z|2022-11-02T04:24:54Z|
+|27757|[QuivrHQ/quivr](git://github.com/QuivrHQ/quivr.git)|TypeScript|Your GenAI Second Brain 🧠  A personal productivity assistant (RAG) ⚡️🤖 Chat with your docs (PDF, CSV, ...)  & apps using Langchain, GPT 3.5 / 4 turbo, Private, Anthropic, VertexAI, Ollama, LLMs, that you can share with users !  Local & Private alternative to OpenAI GPTs & ChatGPT powered by retrieval-augmented generation.|2024-02-08T05:27:56Z|2023-05-12T23:53:30Z|
+|25421|[milvus-io/milvus](git://github.com/milvus-io/milvus.git)|Go|A cloud-native vector database, storage for next generation AI applications|2024-02-08T01:04:12Z|2019-09-16T06:43:43Z|
