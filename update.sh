@@ -13,3 +13,5 @@ python3 ./tools/Search_Repo.py --filename ./src/AI_llm.md --input_val llm
 
 python3 ./tools/Search_Repo.py --filename ./src/AI_aigc.md --input_val aigc
 
+# Test : just search 
+python  ./tools/Search_Repo.py --input_val llm
