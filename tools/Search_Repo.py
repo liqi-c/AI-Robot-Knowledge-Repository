@@ -53,7 +53,7 @@ for repo_dict in repo_dicts:
     if count >= 100:
         break
     # stars > 1000 
-    if repo_dict['stargazers_count'] < 1000:
+    if repo_dict['stargazers_count'] < 10:
         continue
     # too much long description is not invoved.
     if len(repo_dict['description']) > 1000:
@@ -73,6 +73,7 @@ for repo_dict in repo_dicts:
     if filename is not None and len(str(filename)) != 0:
         with open(filename, "a") as file:
             file.write(usage_message)
-            print(usage_message)
+            
+    print(usage_message)
     count += 1
  # 打开文件，使用追加模式（"a"）以便将内容添加到现有文件中，如果文件不存在则创建新文件
