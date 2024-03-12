@@ -10,21 +10,15 @@ parser = argparse.ArgumentParser(description='Description of your program')
 
 # 添加命令行参数
 parser.add_argument('--filename', metavar='filename', type=str, help='Input variable in the format filename')
-parser.add_argument('--input_val', metavar='input_val', type=str, help='Input variable in the format input_val')
+parser.add_argument('--ptr', metavar='ptr', type=str, help='Input variable in the format input_val')
 
 # 解析命令行参数
 args = parser.parse_args()
 
 # 访问解析后的参数
 filename = args.filename
-input_val = args.input_val
-
+input_val = args.ptr
 print(" filename =",filename,"\n","input_val =",input_val)
-#filename = "../src/AI_ori.md"
-
-# 获取用户输入的变量
-#input_val = input("请输入repo名称: ")
-#input_val="cnn"
 
 # 构建URL并替换变量
 URL = 'https://api.github.com/search/repositories?q={}&sort=stars'.format(input_val)
@@ -44,36 +38,42 @@ existing_strings = set()  # 存储已经存在的字符串
 if filename is None or len(str(filename)) == 0:
     print("####Test mode , will not write file. ")
 else:
-    with open(filename, "r") as file:
+    with open(filename, "w+") as file:
+        file.write("|Stars|Repository|Description|Language|Updated|Created|\n")
+        file.write("|:-|:-|:-|:-|:-|:-|\n")
         for line in file:
             existing_strings.add(line.strip())
+ #       |Stars|Repository|Language|Description|Updated|Created|
+ #       |:-|:-|:-|:-|:-|:-|    
 
 for repo_dict in repo_dicts:
     # must print out 100 items.
     if count >= 100:
         break
     # stars > 1000 
-    if repo_dict['stargazers_count'] < 10:
+    if repo_dict['stargazers_count'] < 500:
         continue
     # too much long description is not invoved.
-    if len(repo_dict['description']) > 1000:
-        continue
+    if repo_dict['description'] != None:
+        if len(repo_dict['description']) > 1000:
+            continue
+
     # judgment exist is not write again.
     repo_string = "[" + repo_dict['full_name'] + "](" + repo_dict['html_url'] + ")"
     if any(existing_string.find(repo_string) != -1 for existing_string in existing_strings):
-        print("#####exist string=",repo_string)
+        print("#####exist string=", repo_string)
         continue
-    # usage_message is usefull message .
-    if repo_dict['language'] == None:
-        usage_message="|" + str(repo_dict['stargazers_count']) + "|" + "[" +  repo_dict['full_name'] + "]" + "(" +  repo_dict['html_url'] + ")" + "|" +  str(repo_dict['language']) + "|" +  repo_dict['description'] + "|" +  repo_dict['updated_at'] + "|" + repo_dict['created_at']
-    else:
-        usage_message="|" + str(repo_dict['stargazers_count']) + "|" + "[" +  repo_dict['full_name'] + "]" + "(" +  repo_dict['html_url'] + ")" + "|" +  repo_dict['language'] + "|" +  repo_dict['description'] + "|" +  repo_dict['updated_at'] + "|" + repo_dict['created_at']
-    
-    # write file .
+
+    for key, value in repo_dict.items():
+        if value is None:
+            repo_dict[key] = "/"  # 将 None 更改为您想要的字符串
+
+    usage_message="|" + str(repo_dict['stargazers_count']) + "|" + "[" +  repo_dict['full_name'] + "]" + "(" +  repo_dict['html_url'] + ")" + "|" +  repo_dict['description']  + "|" +  repo_dict['language'] + "|"  +  repo_dict['updated_at'] + "|" + repo_dict['created_at'] + "|\n" 
+
+    # write file . # 打开文件，使用追加模式（"a"）以便将内容添加到现有文件中，如果文件不存在则创建新文件
     if filename is not None and len(str(filename)) != 0:
         with open(filename, "a") as file:
             file.write(usage_message)
             
     print(usage_message)
     count += 1
- # 打开文件，使用追加模式（"a"）以便将内容添加到现有文件中，如果文件不存在则创建新文件
