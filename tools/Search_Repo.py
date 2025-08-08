@@ -51,7 +51,7 @@ for repo_dict in repo_dicts:
     if count >= 100:
         break
     # stars > 1000 
-    if repo_dict['stargazers_count'] < 500:
+    if repo_dict['stargazers_count'] < 5000:
         continue
     # too much long description is not invoved.
     if repo_dict['description'] != None:
@@ -68,7 +68,7 @@ for repo_dict in repo_dicts:
         if value is None:
             repo_dict[key] = "/"  # 将 None 更改为您想要的字符串
 
-    usage_message="|" + str(repo_dict['stargazers_count']) + "|" + "[" +  repo_dict['full_name'] + "]" + "(" +  repo_dict['html_url'] + ")" + "|" +  repo_dict['description']  + "|" +  repo_dict['language'] + "|"  +  repo_dict['updated_at'] + "|" + repo_dict['created_at'] + "|\n" 
+    usage_message="|" + str(repo_dict['stargazers_count']) + "|" + "[" +  repo_dict['full_name'] + "]" + "(" +  repo_dict['html_url'] + ")" + "|" +  repo_dict['description']  + "|" +  repo_dict['language'] + "|"  +  repo_dict['updated_at'] + "|" + repo_dict['created_at'] + "|" 
 
     # write file . # 打开文件，使用追加模式（"a"）以便将内容添加到现有文件中，如果文件不存在则创建新文件
     if filename is not None and len(str(filename)) != 0:

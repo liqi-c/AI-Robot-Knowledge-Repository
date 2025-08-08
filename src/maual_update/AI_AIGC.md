@@ -39,7 +39,7 @@
 
 
 | Stars | Repository| Language | Description| Updated | Created|
-| : | : | :- | :- | : | :- |
+| :- | :- | :- | :- | :- | :- |
 |63535|[CompVis/stable-diffusion](https://github.com/CompVis/stable-diffusion) |Jupyter Notebook|A latent text-to-image diffusion model|2024-02-19T02:39:30Z|2022-08-10T14:36:44Z
 |121450|[AUTOMATIC1111/stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui) |Python|Stable Diffusion web UI|2024-02-19T02:49:03Z|2022-08-22T14:05:26Z
 |25475|[comfyanonymous/ComfyUI](https://github.com/comfyanonymous/ComfyUI) |Python|The most powerful and modular stable diffusion GUI, api and backend with a graph/nodes interface.|2024-02-19T02:52:43Z|2023-01-17T03:15:56Z
@@ -101,7 +101,7 @@
 ## 工具
 
 | Stars | Repository| Language | Description| Updated | Created|
-| : | : | :- | :- | : | :- |
+| :- | :- | :- | :- | :- | :- |
 |2216|[yangjian102621/chatgpt-plus](https://github.com/yangjian102621/chatgpt-plus)|AI 助手全套开源解决方案，自带运营管理后台，开箱即用。集成了 ChatGPT, Azure, ChatGLM,讯飞星火，文心一言等多个平台的大语言模型。支持 MJ AI 绘画，Stable Diffusion AI  绘画，微博热搜等插件工具。采用 Go + Vue3 + element-plus 实现。|Vue|2024-03-14T03:09:40Z|2023-05-06T06:48:54Z|
 |64205|[ChatGPTNextWeb/ChatGPT-Next-Web](https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web)|A cross-platform ChatGPT/Gemini UI (Web / PWA / Linux / Win / MacOS). 一键拥有你自己的跨平台 ChatGPT/Gemini 应用。|TypeScript|2024-03-14T03:08:57Z|2023-03-10T18:27:54Z|
 |11005|[labring/FastGPT](https://github.com/labring/FastGPT)|支持同时接入线上和本地化，FastGPT is a knowledge-based platform built on the LLM, offers out-of-the-box data processing and model invocation capabilities, allows for workflow orchestration through Flow visualization!|TypeScript|2024-03-14T04:18:15Z|2023-02-23T16:53:25Z|
@@ -128,7 +128,7 @@
 
 
 | Stars | Repository| Language | Description| Updated| Created|
-| : | : | :- | :- | :- | :- |
+| :- | :- | :- | :- | :- | :- |
 | 6341| [liaokongVFX/LangChain-Chinese-Getting-Started-Guide](https://github.com/liaokongVFX/LangChain-Chinese-Getting-Started-Guide.git) | None | LangChain的中文入门教程| 2024-02-07T13:50:53Z | 2023-04-07T13:15:12Z |
 | 4737| [EwingYangs/awesome-open-gpt](https://github.com/EwingYangs/awesome-open-gpt.git) | Python | CollectionofOpenSourceProjectsRelatedtoGPT，GPT相关开源项目合集🚀、精选🔥🔥| 2024-02-07T14:44:39Z | 2023-04-03T13:05:07Z |
 | 1713| [DSXiangLi/DecryptPrompt](https://github.com/DSXiangLi/DecryptPrompt.git) | None | 总结Prompt&LLM论文，开源数据&模型，AIGC应用| 2024-02-07T10:03:32Z | 2023-02-10T14:10:38Z |
@@ -139,11 +139,9 @@
 
 ### 模型评测
 
-> 大模型评估尚未出现北极星指标，榜单排名往往和实际使用能力存在较大差异，几天没看感觉有的榜单快被玩坏了......
-
 
 | 榜单| 结果 |
-| - |  |
+| :- | :- |
 | [AlpacaEval：LLM-based automatic evaluation ](https://tatsu-lab.github.io/alpaca_eval/) | 开源模型王者vicuna,openchat, wizardlm|
 | [Huggingface Open LLM Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard)| MMLU只评估开源模型，Falcon夺冠，在Eleuther AI4个评估集上评估的LLM模型榜单,vicuna夺冠 |
 | [https://opencompass.org.cn/](https://opencompass.org.cn/)| 上海人工智能实验室推出的开源榜单 |
