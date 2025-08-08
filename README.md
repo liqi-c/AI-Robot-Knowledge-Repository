@@ -1,9 +1,18 @@
-# AI-Robot-Knowledge-Repository
-收集整理 AI 和 机器人相关的技术
+# git_spider
+一个基于github的智能搜索工具
 
-使用指南：
-example: 
-python3 ./tools/Search_Repo.py --filename ./src/AI_ori.md --ptr "cnn or Inference"
-python  ./tools/Search_Repo.py --ptr llm
+```
+## 搜索
+python ./tools/Search_Repo.py -q "agentic" -o ./src/maual_update/Agentic.md
+python ./tools/Search_Repo.py -q "mcp" -o ./src/maual_update/MCP.md
+python ./tools/Search_Repo.py -q "rag" -o ./src/maual_update/RAG.md
+python ./tools/Search_Repo.py -q "awesome rag" -o ./src/maual_update/awesome_rag.md
+python ./tools/Search_Repo.py -q "awesome llm" -o ./src/maual_update/awesome_llm.md
 
-python ./tools/Search_Repo.py -q "awesome and rag" -o ./src/maual_update/awesome_rag.md
+
+## 更新
+python ./tools/Search_Repo.py --update -o ./src/maual_update/awesome_llm.md
+python ./tools/Search_Repo.py --update -o ./src/maual_update/Agentic.md
+python ./tools/Search_Repo.py --update -o ./src/maual_update/MCP.md
+python ./tools/Search_Repo.py --update -o ./src/maual_update/RAG.md
+```
